@@ -2,6 +2,7 @@ import React from 'react';
 import sad from './assets/naruto-sad.jpg';
 import happy from './assets/fmab-happy.jpg';
 import extra from './assets/silent voice.jpg';
+import { mangaText } from './assets/text';
 
 export default function App() {
 
@@ -24,13 +25,16 @@ export default function App() {
     if (mood === 'happy') {
       console.log("start sentiment analysis for happy");
       moodSA = "happy";
+      console.log(mangaText.happy); // replace with a call to the sentiment analysis
     }
     else if (mood === 'sad') {
       console.log("start sentiment analysis for sad");
       moodSA = "sad";
+      console.log(mangaText.sad); // replace with a call to the sentiment analysis
     }
     else {
       console.log("cannot start sentiment analysis")
+      console.log(mangaText.extra); // replace with a call to the sentiment analysis
     }
   }
 
@@ -75,7 +79,7 @@ export default function App() {
       <p>Performing sentiment analysis...</p>
       <p>This is a {moodSA} scene.</p>
       {/* create a new song */}
-      
+
     </>
   )
 }
