@@ -19,7 +19,7 @@ Chang, S., Zhang, Y., ... Huang, T. (2017).
 Fast Generation For Convolutional Autoregressive Models, 1-5.
 """
 import utils
-import Config
+from h512_bo16 import Config
 from h512_bo16 import FastGenerationConfig
 import numpy as np
 from scipy.io import wavfile
