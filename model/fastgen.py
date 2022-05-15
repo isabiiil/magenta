@@ -18,9 +18,9 @@ Ramachandran, P., Le Paine, T., Khorrami, P., Babaeizadeh, M.,
 Chang, S., Zhang, Y., ... Huang, T. (2017).
 Fast Generation For Convolutional Autoregressive Models, 1-5.
 """
-from magenta.models.nsynth import utils
-from magenta.models.nsynth.wavenet.h512_bo16 import Config
-from magenta.models.nsynth.wavenet.h512_bo16 import FastGenerationConfig
+import utils
+import Config
+from h512_bo16 import FastGenerationConfig
 import numpy as np
 from scipy.io import wavfile
 import tensorflow.compat.v1 as tf
