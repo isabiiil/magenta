@@ -29,8 +29,8 @@ from itertools import product
 
 #  load the settings file
 settings = None
-with open('settings.json', 'r') as infile:
-  settings = json.load(infile)
+#with open('settings.json', 'r') as infile:
+#  settings = json.load(infile)
 
 #  preserve the working directory path
 source_dir = os.getcwd()
